@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Slider(props) {
+function Slider() {
     return(
         <div className="slidebox">
             <div className="button" id="left"></div>

@@ -43,7 +43,7 @@ class App extends Component {
       return null
     } else {
     // let list = this.state.recipes.map(i => <Slider content={i} />)
-    return(<Container content={this.state.recipes}/>)
+    return(<div><Container content={this.state.recipes}/></div>)
     }
   }
 }

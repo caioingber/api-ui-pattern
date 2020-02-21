@@ -2,9 +2,9 @@ import React from 'react'
 import Slider from './Slider'
 
 function Container(props) {
-    let list = props.content.recipes.map(i => <Slider content={i} />)
+    // let list = props.content.map(i => <Slider content={i} />)
     return(
-        {list}
+        <Slider content={props.content}/>
     )
 
 }

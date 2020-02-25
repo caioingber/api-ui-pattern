@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    for(let i=0; i < 4; i++) {
+    for(let i=0; i < 20; i++) {
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
       .then(res => res.json())
       .then(data => {

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import Slider from './Slider'
 
-const shiftRight = {
-    transform: `translateX(-500px)`
-}
-
 class Container extends Component {
     constructor(props) {
         super(props)
@@ -12,12 +8,12 @@ class Container extends Component {
         this.state = {
             slide: 1,
             reverseSlide: 1,
-            transform: ''
+            transform: '',
         }
     }
 
     moveRight = () => {
-        if (this.state.slide < 4) {
+        if (this.state.slide < this.props.content.length) {
             this.setState({
                 slide: this.state.slide + 1,
                 reverseSlide: this.state.reverseSlide - 1,

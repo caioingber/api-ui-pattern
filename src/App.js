@@ -9,10 +9,6 @@ class App extends Component {
 
     this.state = {
       recipes: []
-      // title: "",
-      // cuisine: "",
-      // image: "",
-      // recipe: "",
     }
   }
 
@@ -43,7 +39,12 @@ class App extends Component {
       return null
     } else {
     // let list = this.state.recipes.map(i => <Slider content={i} />)
-    return(<div><Container content={this.state.recipes}/></div>)
+    return(
+    <div>
+      <header>Slider API</header>
+      <Container content={this.state.recipes}/>
+    </div>
+    )
     }
   }
 }

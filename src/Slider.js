@@ -5,10 +5,11 @@ function Slider(props) {
 
     return(
         <div className="slidebox">
-            <h3 className="title">{props.content.title}</h3>
+            <p className="count">{props.count} of {props.length}</p>
+            <h2 className="title">{props.content.title}</h2>
             <h4 className="cuisine">{props.content.cuisine}</h4>
             <div className="pic" style={{backgroundImage: `url(${imageUrl})`}}></div>
-            <p className="recipe">{props.content.recipe}</p>
+            <div className="recipe"><p >{props.content.recipe}</p></div>
         </div>
     )
 }

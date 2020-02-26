@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    for(let i=0; i < 20; i++) {
+    for(let i=0; i < 10; i++) {
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
       .then(res => res.json())
       .then(data => {
@@ -40,8 +40,8 @@ class App extends Component {
     } else {
     // let list = this.state.recipes.map(i => <Slider content={i} />)
     return(
-    <div>
-      <header>Slider API</header>
+    <div className='App'>
+      <header>Random Meal Slider API</header>
       <Container content={this.state.recipes}/>
     </div>
     )

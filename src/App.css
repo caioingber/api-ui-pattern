@@ -1,8 +1,31 @@
 * {
   box-sizing: border-box;
+  text-align: justify;
+  margin: 0;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .pic {
   height: 300px;
+  width: 400px;
   background-position: center;
   background-size: cover;
 }
@@ -12,6 +35,7 @@
   display: flex;
   position: relative;
   overflow: hidden;
+  height: 80vh;
 }
 
 .content {
@@ -20,11 +44,57 @@
   flex-wrap: nowrap;
 }
 
-.slidebox > * {
-  border: 1px solid black;
-  width: 500px;
+.content img {
+  width: 80%;
 }
-button {
+
+.slidebox > * {
+  /* border: 1px solid black; */
+  width: 500px;
+  padding: 10px;
+}
+
+.slidebox {
+  border: 3px solid black;
+  width: 100%;
+}
+
+.b-container {
   width: 50px;
+  height: 100%;
   z-index: 5;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 80%;
+  height: 40px;
+  cursor: pointer;
+  z-index: 5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.recipe {
+  height: 200px;
+  padding: 5%;
+  overflow-y: scroll;
+  margin-bottom: 5%;
+}
+
+#right {
+  background-image: url('next.svg');
+}
+
+#left {
+  background-image: url('back.svg');
+}
+
+.count {
+  text-align: center;
 }

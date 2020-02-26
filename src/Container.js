@@ -36,14 +36,18 @@ class Container extends Component {
     const shift = {
         transform: this.state.transform
     }
-    let list = this.props.content.map(i => <Slider content={i} />)
+    let list = this.props.content.map(i => <Slider content={i} count={this.state.slide} length={this.props.content.length}/>)
     return(
         <div className='container'>
-            <button className="button" id="left" onClick={this.moveLeft}></button>
+            <div className="b-container" >
+                <div className='button' id="left" onClick={this.moveLeft}></div>
+            </div>
             <div className='content' style={shift}>
             {list}
             </div>
-            <button className="button" id="right" onClick={this.moveRight}></button>
+            <div className="b-container">
+                <div className='button' id="right" onClick={this.moveRight}></div>
+            </div>
         </div>
     )
 
